@@ -1,3 +1,118 @@
 body {
+	max-width: 1920px;
+	min-width: 360px;
+	margin: 0 auto;
+	background: #fefcfe;
+	overflow-x: hidden;
 	font-family: 'Montserrat', sans-serif;
 }
+ul {
+	padding: 0;
+	list-style-type: none;
+}
+.container {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+/* HEADER  */
+.header {
+	width: 100%;
+	min-height: 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 50px;
+}
+.burger {
+	width: 29px;
+	height: 22px;
+	background-image: url(../images/burger-1.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	display: none;
+}
+.header__inner {
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	gap: 94px;
+}
+.logo {
+	display: block;
+	width: 96px;
+	height: 30px;
+	background-image: url(../images/logo.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+.logo:hover {
+	width: 97px;
+}
+.logo:hover + nav {
+	margin-left: -1px;
+}
+.menu {
+	max-width: 470px;
+	height: 27px;
+	margin: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 54px;
+}
+.header__menu_item {
+  margin-top: 10px;
+}
+.header__menu_item a {
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 150%;
+	color: #2b3541;
+	text-decoration: none;
+}
+.header__menu_item a::after {
+	content: "";
+	width: 100%;
+	height: 1px;
+	border: none;
+	margin-top: 10px;
+	display: block;
+	background-color: transparent;
+	text-replace: 0.3s;
+}
+.header__menu_item:hover.header__menu_item a::after {
+	background-color: #2b3541;
+}
+.socials {
+	width: 90px;
+	height: 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 30px;
+}
+.header__sociai {
+	display: block;
+	width: 30px;
+	height: 30px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	transition: 0.3s;
+
+}
+.header__sociai_in {
+	background-image: url(../images/in.svg);
+}
+.header__sociai_fb {
+	background-image: url(../images/fb.svg);
+}
+.header__sociai:hover {
+	width: 38px;
+	height: 38px;
+	margin: 0 -4px;
+	cursor: pointer;
+}   
