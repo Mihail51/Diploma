@@ -5,6 +5,7 @@ body {
 	background: #fefcfe;
 	overflow-x: hidden;
 	font-family: 'Montserrat', sans-serif;
+	color: #2b3541;
 }
 ul {
 	padding: 0;
@@ -13,6 +14,11 @@ ul {
 .container {
 	max-width: 1140px;
 	margin: 0 auto;
+}
+.wrapper {
+	position: relative;
+	width: 100%;
+	display: flex;
 }
 
 /* HEADER  */
@@ -70,7 +76,6 @@ ul {
 	font-size: 18px;
 	font-weight: 400;
 	line-height: 150%;
-	color: #2b3541;
 	text-decoration: none;
 }
 .header__menu_item a::after {
@@ -81,7 +86,7 @@ ul {
 	margin-top: 10px;
 	display: block;
 	background-color: transparent;
-	text-replace: 0.3s;
+	transition: 0.3s;
 }
 .header__menu_item:hover.header__menu_item a::after {
 	background-color: #2b3541;
@@ -115,4 +120,102 @@ ul {
 	height: 38px;
 	margin: 0 -4px;
 	cursor: pointer;
-}   
+}
+
+/* BG  */
+/*
+.bg {
+	background-image: url(../images/girl.png);
+	background-repeat: no-repeat;
+	background-position: 90% 100%;
+	z-index: 10;
+
+}  */
+.bg__wrapper {
+	height: 852px;
+	position: relative;
+	margin: 11px auto 160px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.bg__content {
+	max-width: 676px;
+	height: 385px;
+/*	margin-top: 228px;
+	margin-bottom: 239px;   */
+}
+.title {
+	font-size: 48px;
+	font-weight: 700;
+	line-height: 125%;
+	letter-spacing: 1.44px;
+	text-transform: uppercase;
+	margin-top: -3px;
+	margin-bottom: 41px;
+}
+.bg__subtitle {
+	width: 345px;
+	height: 50px;
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	gap: 20px;
+	font-size: 40px;
+	font-weight: 400;
+	line-height: 125%;
+}
+.bg__content__holder {
+	width: 293px;
+	margin-left: 94px;
+}
+.holder__text {
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 150%;
+	margin-bottom: 37px;
+}
+.holder__button {
+	display: inline-flex;
+	padding: 20px 30px;
+	align-items: center;
+	gap: 10px;
+	background-color: #fbf138;
+	box-shadow: 0px 13px 24px 0px rgba(251, 241, 56, 0.30);
+	border: none;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 150%;
+	letter-spacing: 0.48px;
+	text-transform: uppercase;
+	transition:  0.3s;
+}
+.holder__button:hover {
+	background-color: #2b3541;
+	box-shadow: 0px 13px 24px 0px rgba(70, 86, 106, 0.20);
+	color: #fbf138;
+	cursor: pointer;
+}
+.bg__gradient {
+	width: 464px;
+	height: 100%;
+	opacity: 0.2;
+	background: linear-gradient(90deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 145.23%);
+}
+.girl {
+	position: absolute;
+	right: -15%;
+	bottom: 0;
+}
+.bg__btn_down {
+	width: 52px;
+	height: 53px;
+	border: 3px solid #2B3541;
+	border-radius: 50%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background-image: url(../images/arrow.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+} 

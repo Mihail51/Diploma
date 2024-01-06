@@ -34,6 +34,37 @@
 			</div>
 		</div>
 	</header>
+	<div class="bg">
+		<div class="container">
+			<div class="wrapper bg__wrapper">
+				<div class="content bg__content">
+					<h1 class="title">онлайн тренировки любой сложности</h1>
+					<div class="subtitle bg__subtitle">
+						<p class="quantity bg__content__quantity">&gt; 15</p>
+						<p class="desc bg__content__desc">тренировок</p>
+					</div>
+					<div class="holder bg__content__holder">
+						<p class="text holder__text">в области спортивной физиологии и нутрициологии</p>
+						<button class="button holder__button">Узнать подробнее</button>
+					</div>
+				</div>
+				<div class="gradient bg__gradient"></div>
+<!--				<img width="983" height="809" src="images/girl.png" alt="" class="giri">  -->
+				<picture class="girl">
+					<!-- 1x: 983px; 2x: 1966px -->
+					<!-- tablet 1x: 399px; 2x: 798px -->
+					<!-- mobile 1x: 340px; 2x: 680px; -->
+					<source media="(max-width: 360px)" type="image/webp" srcset="images/girl-mobile.webp 1x, images/girl-mobile@2.webp 2x">
+					<source media="(max-width: 360px)" type="image/png" srcset="images/girl-mobile.png 1x, images/girl-mobile@2.png 2x">
+					<source media="(max-width: 768px)" type="image/webp" srcset="images/girl-tablet.webp 1x, images/girl-tablet@2.webp 2x">
+					<source media="(max-width: 768px)" type="image/png" srcset="images/girl-tablet.png 1x, images/girl-tablet@2.png 2x">
+					<source media="(max-width: 1920px)" type="image/webp" srcset="images/girl.webp 1x, images/girl@2.webp 2x">
+					<img width="983" height="809" src="images/girl.png" srcset="images/girl@2.png 2x" alt="Девушка-спртсменка">
+				</picture>
+				<a href="#events" class="btn bg__btn bg__btn_down"></a>
+			</div>
+		</div>
+	</div>
 	
 </body>
 </html>
