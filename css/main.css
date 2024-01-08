@@ -148,12 +148,12 @@ ul {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	flex-wrap: wrap;
 }
 .bg__content {
+	flex-basis: 59%;
 	max-width: 676px;
-	height: 385px;
-/*	margin-top: 228px;
-	margin-bottom: 239px;   */
+	min-height: 385px;
 }
 .title {
 	font-size: 48px;
@@ -207,6 +207,7 @@ ul {
 	cursor: pointer;
 }
 .bg__gradient {
+	flex-basis: 41%;
 	width: 464px;
 	height: 100%;
 	opacity: 0.2;
