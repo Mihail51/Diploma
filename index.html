@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="css/adapted.css">
 </head>
 <body>
+	<!-- Start of HEADER -->
 	<header id="headerTop">
 		<div class="container">
 			<div class="header header__top">
@@ -22,9 +23,9 @@
 					<a href="#" class="logo header__logo"></a>
 					<nav>
 						<ul class="menu header__menu">
-							<li class="item header__menu_item"><a href="#events">Мероприятия</a></li>
-							<li class="item header__menu_item"><a href="#schedule">Расписание</a></li>
-							<li class="item header__menu_item"><a href="#about">О компании</a></li>
+							<li class="item header__menu__item"><a href="#events">Мероприятия</a></li>
+							<li class="item header__menu__item"><a href="#schedule">Расписание</a></li>
+							<li class="item header__menu__item"><a href="#about">О компании</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -35,11 +36,13 @@
 			</div>
 		</div>
 	</header>
+	<!-- End of HEADER -->
+	<!-- Start of BG -->
 	<div class="bg">
 		<div class="container">
 			<div class="wrapper bg__wrapper">
 				<div class="content bg__content">
-					<h1 class="title">онлайн тренировки любой сложности</h1>
+					<h1 class="title bg__title">онлайн тренировки любой сложности</h1>
 					<div class="subtitle bg__subtitle">
 						<p class="quantity bg__content__quantity">&gt; 15</p>
 						<p class="desc bg__content__desc">тренировок</p>
@@ -50,7 +53,6 @@
 					</div>
 				</div>
 				<div class="gradient bg__gradient"></div>
-<!--				<img width="983" height="809" src="images/girl.png" alt="" class="giri">  -->
 				<picture class="girl">
 					<!-- 1x: 983px; 2x: 1966px -->
 					<!-- tablet 1x: 399px; 2x: 798px -->
@@ -66,6 +68,82 @@
 			</div>
 		</div>
 	</div>
+	<!-- End of BG -->
+	<main>
+		<!-- Start of EVENTS -->
+		<section class="events" id="events">
+			<div class="container events__container">
+				<wrapper class="events__wrapper">
+					<div class="header events__header">
+						<h2 class="title events__title">Ближайшие события</h2>
+					</div>
+					<div class="grid events__grid">
+						<div class="item events__grid__item events__grid__item_1">
+							<picture class="cover events__grid__cover">
+								<!-- 1x: 368px; 2x: 735px -->
+								<!-- tablet 1x: 364px; 2x: 728px -->
+								<!-- mobile 1x: 165px; 2x: 330px; -->
+								<source media="(max-width: 360px)" type="image/webp" srcset="images/maraphon-mobile.webp 1x, images/maraphon-mobile@2.webp 2x">
+								<source media="(max-width: 360px)" type="image/jpg" srcset="images/maraphon-mobile.jpg 1x, images/maraphon-mobile@2.jpg 2x">
+								<source media="(max-width: 768px)" type="image/webp" srcset="images/maraphon-tablet.webp 1x, images/maraphon-tablet@2.webp 2x">
+								<source media="(max-width: 768px)" type="image/jpg" srcset="images/maraphon-tablet.jpg 1x, images/maraphon-tablet@2.jpg 2x">
+								<source media="(max-width: 1920px)" type="image/webp" srcset="images/maraphon.webp 1x, images/maraphon@2.webp 2x">
+								<img width="983" height="809" src="images/maraphon.jpg" srcset="images/maraphon-mobile@2.jpg 2x" alt="Девушка занимается с гантелей">
+							</picture>	
+							<div class="gradient events__gradient"></div>
+							<div class="inform events__inform">
+								<div class="date events__date">29.06 - 4.07</div>
+								<div class="name events__name">Марафон выносливости</div>
+								<div class="view events__view">марафон</div>
+								<a href="#" class="btn events__btn">записаться</a>
+							</div>
+						</div>
+						<div class="item events__grid__item events__grid__item_2">
+							<picture class="cover events__grid__cover">
+								<!-- 1x: 368px; 2x: 735px -->
+								<!-- tablet 1x: 364px; 2x: 728px -->
+								<!-- mobile 1x: 165px; 2x: 330px; -->
+								<source media="(max-width: 360px)" type="image/webp" srcset="images/Vebinar-1-mobile.webp 1x, images/Vebinar-1-mobile@2.webp 2x">
+								<source media="(max-width: 360px)" type="image/jpg" srcset="images/Vebinar-1-mobile.jpg 1x, images/Vebinar-1-mobile@2.jpg.png 2x">
+								<source media="(max-width: 768px)" type="image/webp" srcset="images/Vebinar-1-tablet.webp 1x, images/Vebinar-1-tablet@2.webp 2x">
+								<source media="(max-width: 768px)" type="image/jpg" srcset="images/Vebinar-1-tablet.jpg 1x, images/Vebinar-1-tablet@2.jpg.png 2x">
+								<source media="(max-width: 1920px)" type="image/webp" srcset="images/vebinar-1.webp 1x, images/vebinar-1@2.webp 2x">
+								<img width="983" height="809" src="images/vebinar-1.jpg" srcset="images/vebinar-1@2.jpg.png 2x" alt="Мужчина тренер">
+							</picture>
+							<div class="gradient events__gradient"></div>
+							<div class="inform events__inform">
+								<div class="date events__date">9.07</div>
+								<div class="name events__name">Как стать тренером?</div>
+								<div class="view events__view">вебинар</div>
+								<a href="#" class="btn events__btn">записаться</a>
+							</div>
+						</div>
+						<div class="item events__grid__item events__grid__item_3">
+							<picture class="cover events__grid__cover">
+								<!-- 1x: 368px; 2x: 735px -->
+								<!-- tablet 1x: 364px; 2x: 728px -->
+								<!-- mobile 1x: 165px; 2x: 330px; -->
+								<source media="(max-width: 360px)" type="image/webp" srcset="images/Vebinar-2-mobile.webp 1x, images/Vebinar-2@2.webp 2x">
+								<source media="(max-width: 360px)" type="image/jpg" srcset="images/Vebinar-2-mobile.jpg 1x, images/Vebinar-2-mobile@2.jpg 2x">
+								<source media="(max-width: 768px)" type="image/webp" srcset="images/Vebinar-2-tablet.webp 1x, images/Vebinar-2-tablet@2.webp 2x">
+								<source media="(max-width: 768px)" type="image/jpg" srcset="images/Vebinar-2-tablet.jpg 1x, images/Vebinar-2-tablet@2.jpg 2x">
+								<source media="(max-width: 1920px)" type="image/webp" srcset="images/Vebinar-2.webp 1x, images/Vebinar-2@2.webp 2x">
+								<img width="983" height="809" src="images/Vebinar-2.jpg" srcset="images/Vebinar-2@2.jpg 2x" alt="Девушка-спртсменка">
+							</picture>	
+							<div class="gradient events__gradient"></div>
+							<div class="inform events__inform">
+								<div class="date events__date">15.07</div>
+								<div class="name events__name">Йога, как стиль жизни</div>
+								<div class="view events__view">вебинар</div>
+								<a href="#" class="btn events__btn">записаться</a>
+							</div>
+						</div>
+					</div>
+				</wrapper>
+			</div>
+		</section>
+		<!-- End of EVENTS -->
+	</main>
 	
 </body>
 </html>
