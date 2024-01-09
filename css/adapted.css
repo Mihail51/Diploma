@@ -31,11 +31,8 @@
 	}
 	.bg__wrapper {
 		height: 500px;
-	}  /*
-	.bg__content {
-		max-width: 370px;
-	}  */
-	.title {
+	}  
+	.bg__title {
 		font-size: 26px;
 		letter-spacing: 0.78px;
 		margin-top: 30px;
@@ -100,7 +97,7 @@
 		max-width: 359px;
 		margin-top: -5px;
 	}
-	.title {
+	.bg__title {
 		font-size: 26px;
 		margin-bottom: 35px;
 	}
@@ -145,7 +142,7 @@
 		max-width: 548px;
 		margin-top: 0;
 	}
-	.title {
+	.bg__title {
 		font-size: 24.693px;
 		letter-spacing: 0.741px;
 	}
@@ -159,7 +156,7 @@
 	}
 }
 @media (max-width: 360px) {
-	.header {
+	.header__top {
 		margin-top: 13px;
 	}
 	.bg__wrapper {
