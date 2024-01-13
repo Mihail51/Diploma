@@ -409,6 +409,12 @@
 		padding: 20px 22px 30px;
 		background-position: 20px calc(100% - 20px);
 	}
+	.schedule__grid__item:hover {
+	  border-color: #000;
+	}
+	.schedule__grid__item:hover .schedule__gradient {
+		opacity: 0;
+	}
 	.schedule__grid__item_4 {
 		background-position: 20px calc(100% - 12px);
 	}
