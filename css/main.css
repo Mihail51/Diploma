@@ -252,6 +252,7 @@ ul {
 }
 .events__grid__item {
 	position: relative;
+	overflow: hidden;
 }
 .events__grid__cover {
 	display: block;
