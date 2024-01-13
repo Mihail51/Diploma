@@ -295,7 +295,7 @@
 		flex-basis:  36%;
 	}
 }
-@media (max-width: 568px), (orientation: landscape) {
+@media (max-width: 568px) and (orientation: landscape) {
 	.bg__wrapper {
 		height: 675px;
 	}
@@ -359,7 +359,7 @@
 		background-size: 35px 40px;
 	}
 }
-@media (max-width: 360px), (orientation: landscape) {
+@media (max-width: 360px) and (orientation: landscape) {
 	.header__top {
 		margin-top: 13px;
 	}
