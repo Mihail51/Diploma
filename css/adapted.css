@@ -285,7 +285,7 @@
 		background-size: 58px 66px;
 	} 
 }
-@media (max-width: 710px), (orientation: landscape) {
+@media (max-width: 710px) {
 	.bg__gradient {
 		flex-basis:  45%;	
 	}
