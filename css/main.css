@@ -2,7 +2,7 @@ body {
 	max-width: 1920px;
 	min-width: 360px;
 	margin: 0 auto;
-	background: #fefcfe;
+	background: #FEFCFE;
 	overflow-x: hidden;
 	font-family: 'Montserrat', sans-serif;
 	color: #2b3541;
@@ -458,4 +458,132 @@ ul {
 	line-height: 125%;
 	color: #2b3541;
 	align-self: flex-start;
+}
+
+/* FEEDBACK */
+.feedback {
+	background: #F3F3F3;
+}
+.feedback__wrapper {
+	height: 348px;
+	padding: 80px 0;
+	margin-bottom: 160px;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	gap: 16px;
+	box-sizing: border-box;
+}
+.feedback__heading {
+	max-width: 587px;
+	height: 49px;
+	position: relative;
+	margin-left: -17px;
+}
+.feedback__title {
+	position: relative;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: normal;
+	margin: 0;
+	z-index: 1;
+}
+.feedback__pattern {
+	width: 53px;
+	height: 53px;
+	border-radius: 50%;
+	background-color: #fbf138;
+	position: absolute;
+	left: 0;
+	top: 0;
+	transform: translate(-35px, -18px);
+}
+.feedback__contact-form {
+	max-width: 620px;
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	gap: 13px 20px;
+	flex-wrap: wrap;
+}
+.feedback__contact-form #email {
+	width: 372px;
+	height: 65px;
+	padding-left: 19px;
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	background-color: #fff;
+	box-sizing: border-box;
+	border: none;
+}
+.feedback__contact-form #email:focus {
+	border: 1px solid #FBF138;
+}
+.feedback__contact-form #email:invalid {
+	border: 1px solid #AE0303;
+}
+.feedback__btn {
+	width: 225px;
+	height: 65px;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 150%;
+	letter-spacing: 0.48px;
+	text-transform: uppercase;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+	border: none;
+	background: #FBF138;
+	box-shadow: 0px 13px 24px 0px rgba(251, 241, 56, 0.20);
+	transition: 0.5s;
+}
+.feedback__btn:hover {
+	color: #fbf138;
+	background: #23262A;
+	box-shadow: 0px 13px 24px 0px rgba(43, 53, 65, 0.20);
+	cursor: pointer;
+}
+.feedback__agreement {
+	position: relative;
+	font-size: 11px;
+	font-weight: 400;
+	line-height: 150%;
+	padding-left: 23px;
+	color: rgba(43, 53, 65, 0.50);
+}
+.feedback__agreement a {
+	color: rgba(43, 53, 65, 0.50);
+}
+.feedback__agreement a:hover {
+	color: #23262a;
+	opacity: 1;
+	text-decoration-line: underline;
+}
+#agreement {
+	display: none;
+}
+#agreement:checked ~ .feedback__agreement span,#agreement:checked ~ .feedback__agreement span a {
+	color: #23262a;
+	opacity: 0.5;
+}
+.feedback__agreement::before {
+	content: "";
+	width: 18px;
+	height: 18px;
+	border: 1px solid #2B3541;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	box-sizing: border-box;
+}
+#agreement:checked ~ .feedback__agreement::before {
+	background-image: url(../images/foursquare-check-in-1.svg);
+	background-color: #2B3541;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
 }
