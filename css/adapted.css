@@ -223,7 +223,8 @@
 		opacity: 0.3;
 	}
 	.schedule__wrapper {
-		height: 716px;
+		height: 816px;
+		margin-bottom: 90px;
 	}
 	.schedule__header {
 		height: 64px;
@@ -246,7 +247,7 @@
 		grid-template-rows: [top] 224px [midle-1] 224px [midle-2] 224px [bottom]
 	}
 	.schedule__grid__item {
-		background-position: 24px calc(100% - 65px);
+		background-position: 24px calc(100% - 73px);
 		padding: 23px 22px 16px;
 	}
 		.schedule__grid__item_1 {
@@ -298,10 +299,16 @@
 		font-size: 18px;
 		line-height: 125%;
 	}
+	.feedback__wrapper {
+		padding: 33px 0;
+		height: auto;
+	}
 	.feedback__heading {
 		max-width: 201px;
 		height: auto;
 		text-align: center;
+		margin-top: 22px;
+		margin-bottom: 30px;
 	}
 	.feedback__title {
 		font-size: 26px;
@@ -315,7 +322,8 @@
 	.feedback__contact-form {
 		width: 100%;
 		max-width: 340px;
-		margin: 0 auto;
+		margin: 10px auto;
+		gap: 13px 0;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
@@ -327,6 +335,7 @@
 	.feedback__btn {
 		max-width: 340px;
 		width: 100%;
+		margin-top: 30px;
 		order: 3;
 	}
 	.feedback__agreement {
@@ -366,6 +375,7 @@
 	}
 	.schedule__wrapper {
 		height: 859px;
+		margin-bottom: 84px;
 	}
 	.schedule__header {
 		margin-bottom: 20px;
@@ -405,6 +415,9 @@
 	.schedule__grid__item_6 {
 		grid-row: midle-5 / bottom;
 		background-size: 35px 40px;
+	}
+	.feedback__heading {
+		margin-bottom: 26px;
 	}
 }
 @media (max-width: 360px) {
