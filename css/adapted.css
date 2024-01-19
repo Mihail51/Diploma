@@ -18,6 +18,23 @@
 	.girl img {
 		width: 900px;
 	}
+	.feedback__wrapper {
+		margin-bottom: 134px;
+	}
+	.about__content {
+		flex-basis: 405px;
+	}
+	.about__image {
+		flex-basis: 498px;
+		height: 282px;
+	}
+	.about__advantages {
+		justify-content: space-between;
+		gap: 65px 0;
+	}
+	.about__advantage:nth-child(1) {
+		flex-basis: 210px;
+	}
 }
 @media (max-width: 1000px) {
 	.container {
@@ -68,6 +85,20 @@
 	}
 	.events__btn {
 		padding: 15px 30px;
+	}
+	.feedback__wrapper {
+		margin-bottom: 105px;
+	}
+	.about__content {
+		flex-basis: 316px;
+	}
+	.about__image {
+		flex-basis: 378px;
+		height: 220px;
+	}
+	.about__advantages {
+		justify-content: start;
+		gap: 65px 160px;
 	}
 }
 @media (max-width: 768px) {
@@ -302,6 +333,7 @@
 	.feedback__wrapper {
 		padding: 33px 0;
 		height: auto;
+		margin-bottom: 92px;
 	}
 	.feedback__heading {
 		max-width: 201px;
@@ -340,11 +372,69 @@
 	}
 	.feedback__agreement {
 		align-self: start;
+	}
+	.about__wrapper {
+		gap: 40px 0;
+		margin-bottom: 80px;
+	}
+	.about__title {
+		font-size: 26px;
+		line-height: normal;
+	}
+	.about__description {
+		font-size: 16px;
+	}
+	.about__btn {
+		width: 214px;
+	}
+	.about__image {
+		flex-basis: 372.85px;
+		height: 227px;
+	}
+	.about__advantages {
+		gap: 43px 160px;
+	}
+	.about__advantage {
+		height: 83px;
+	}
+	.about__advantage:nth-child(1) {
+		flex-basis: 208px;
+	}
+	.about__advantage:nth-child(2) {
+		flex-basis: 223px;
+	}
+	.about__advantage:nth-child(3) {
+		flex-basis: 184px;
+		margin-right: 27px;
+	}
+	.about__advantage:nth-child(4) {
+		flex-basis: 184px;
+		margin-right: 36px;
+	}
+	.about__advantage h3 {
+		font-size: 16px;
+		line-height: 120%;
+	}
+	.about__advantage p {
+		font-size: 16px;
 	} 
 }
 @media (max-width: 710px) {
 	.bg__gradient {
 		flex-basis:  45%;
+	}
+	.about__wrapper {
+		justify-content: space-around;
+	}
+	.about__content {
+		text-align: center;
+	}
+	.about__btn {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.about__image {
+		order: -1;
 	}
 }
 @media (max-width: 650px) {
@@ -497,5 +587,24 @@
 	.schedule__grid__item__date {
 		font-size: 16px;
 		line-height: 150%;
+	}
+	.feedback__wrapper {
+		margin-bottom: 79px;
+	}
+	.about__wrapper {
+		margin-bottom: 65px;
+	}
+	.about__content {
+		flex-basis: 100%;
+		text-align: left;
+	}
+	.about__btn {
+		width: 100%;
+	}
+	.about__image {
+		display: none;
+	}
+	.about__advantages {
+		gap: 40px 160px;
 	}
 }
