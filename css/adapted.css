@@ -35,6 +35,14 @@
 	.about__advantage:nth-child(1) {
 		flex-basis: 210px;
 	}
+	.footer__menu {
+		gap: 60px;
+		margin-left: auto;
+	}
+	.footer__social {
+		flex-basis: 270px;
+		margin-left: auto;
+	}
 }
 @media (max-width: 1000px) {
 	.container {
@@ -100,6 +108,15 @@
 		justify-content: start;
 		gap: 65px 160px;
 	}
+	.footer__menu {
+		gap: 25px;
+	}
+	.footer__social {
+		flex-basis: 218px;
+	}
+	.footer__social__icons {
+		gap: 23px;
+	}
 }
 @media (max-width: 768px) {
 	.container {
@@ -112,14 +129,14 @@
 		display: block;
 		order: 1;
 	}
-	.logo {
+	.header__logo {
 		width: 78px;
 		height: 24px;
 	}
-	.logo:hover {
+	.header__logo:hover {
 		width: 78px;
 	}
-	.logo:hover + nav {
+	.header__logo:hover + nav {
 		margin-left: 0;
 	}
 	.header__inner {
@@ -281,7 +298,7 @@
 		background-position: 24px calc(100% - 73px);
 		padding: 23px 22px 16px;
 	}
-		.schedule__grid__item_1 {
+	.schedule__grid__item_1 {
 		grid-column: start / center;
 		grid-row: top / midle-1;
 		background-image: url(../images/body.svg);
@@ -417,6 +434,42 @@
 	}
 	.about__advantage p {
 		font-size: 16px;
+	}
+	.footer__wrapper {
+		padding-top: 57px;
+		padding-bottom: 56px;
+		gap: 28px;
+	}
+	.footer__content {
+		gap: 45px 72px;
+	}
+	.footer__menu a {
+		font-size: 12px;
+	}
+	.footer__social {
+		height: 27px;
+		margin-top: 0;
+		align-items: center;
+	}
+	.footer__email {
+		font-size: 12px;
+		width: 108px;
+		margin: 11px 30px 0 0;
+	}
+	.footer__ellips {
+		width: 20px;
+		height: 20px;
+		left: -10px;
+		top: -2px;
+	}
+	.footer__official li {
+		font-size: 10px;
+	}
+	.footer__official li:last-child {
+		display: flex;
+	}
+	.footer__official li:nth-child(2) {
+		display: none;
 	} 
 }
 @media (max-width: 710px) {
@@ -508,6 +561,24 @@
 	}
 	.feedback__heading {
 		margin-bottom: 26px;
+	}
+	.footer__official {
+		justify-content: space-around;
+		gap: 15px;
+	}
+}
+@media (max-width: 480px) {
+	.footer__content {
+		justify-content: space-around;
+	}
+	.footer__menu {
+		flex-basis: 100%;
+		margin-left: 0;
+	}
+	.footer__social {
+		flex-basis: 100%;
+		justify-content: space-between;
+		margin-left: 0;
 	}
 }
 @media (max-width: 360px) {
@@ -606,5 +677,16 @@
 	}
 	.about__advantages {
 		gap: 40px 160px;
+	}
+	.footer__wrapper {
+		padding-top: 43px;
+		padding-bottom: 40px;
+		gap: 24px;
+	}
+	.footer__content {
+		gap: 38px 72px;
+	}
+	.footer__social {
+		margin-top: -16px;
 	}
 }
