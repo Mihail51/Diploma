@@ -256,7 +256,7 @@
 					<ul class="menu footer__menu">
 						<li class="item menu__item footer__menu__item"><a href="#events">Мероприятия</a></li>
 						<li class="item menu__item footer__menu__item"><a href="#schedule">Расписание</a></li>
-						<li class="item menu__item footer__menu__item"><a href="about">О компании</a></li>
+						<li class="item menu__item footer__menu__item"><a href="#about">О компании</a></li>
 					</ul>
 					<div class="social footer__social">
 						<div class="email footer__email">info@freefit.com</div>
@@ -275,6 +275,38 @@
 			</div>
 		</div>
 	</footer>
+	<div class="modal" id="modal">
+        <div class="content modal__content">
+        	<a href="#" class="logo header__logo modal__logo"></a>
+			<nav>
+				<ul class="menu header__menu modal__menu">
+					<li class="item header__menu__item modal__menu__item"><a href="#events">Мероприятия</a></li>
+					<hr class="line modal__line">
+					<li class="item header__menu__item modal__menu__item"><a href="#schedule">Расписание</a></li>
+					<hr class="line modal__line">
+					<li class="item header__menu__item modal__menu__item"><a href="#about">О компании</a></li>
+				</ul>
+			</nav>
+			<ul class="socials header__socials modal__socials">
+				<li class="social header__sociai modal__social header__sociai_in modal__social_in"></a></li>
+				<li class="social header__sociai modal__social header__sociai_fb modal__social_fb"></a></li>
+			</ul>
+        	<button class="burger-close modal__burger-close" onclick="closeModal()"></button>
+        </div>
+        <div class="overlap modal__overlap">
+ <!--       	<button class="button holder__button modal__holder__button">Узнать подробнее</button> -->
+        </div>
+    </div>
+
+    <script>
+    	 function openModal() {
+           document.getElementById("modal").style.top = "0px";
+       }
+
+       function closeModal() {
+           document.getElementById("modal").style.top = "-550px";
+       }
+    </script>
 	
 </body>
 </html>
