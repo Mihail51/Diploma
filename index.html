@@ -12,14 +12,16 @@
 	<link rel="stylesheet" href="css/adapted.css">
 </head>
 <body>
+	<input type="checkbox" name="modal-nav" id="modal-nav" class="visually-hidden">
 	<!-- Start of HEADER -->
 	<header id="headerTop">
 		<div class="container">
 			<div class="header header__top">
 				<div class="inner header__inner">
-					<div class="burger header__burger">
+<!--					<div class="burger header__burger">
 						<button class="button header__button" onclick="openModal()"></button>
-					</div>
+					</div>   -->
+					<label for="modal-nav" class="burger header__burger"></label>
 					<a href="#" class="logo header__logo"></a>
 					<nav>
 						<ul class="menu header__menu">
@@ -275,7 +277,8 @@
 			</div>
 		</div>
 	</footer>
-	<div class="modal" id="modal" style="top: -550px;">
+<!--	<input type="checkbox" name="modal-nav" id="modal-nav">  -->
+	<div class="modal" id="modal">
         <div class="content modal__content">
         	<a href="#" class="logo header__logo modal__logo"></a>
 			<nav>
@@ -291,13 +294,14 @@
 				<li class="social header__sociai modal__social header__sociai_in modal__social_in"></a></li>
 				<li class="social header__sociai modal__social header__sociai_fb modal__social_fb"></a></li>
 			</ul>
-        	<button class="burger-close modal__burger-close" onclick="closeModal()"></button>
+<!--        	<button class="burger-close modal__burger-close" onclick="closeModal()"></button>   -->
+        	<label for="modal-nav" class="burger-close modal__burger-close"></label>
         </div>
         <div class="overlap modal__overlap">
  <!--       	<button class="button holder__button modal__holder__button">Узнать подробнее</button> -->
         </div>
     </div>
-
+<!--
     <script>
     	 function openModal() {
            document.getElementById("modal").style.top = "0px";
@@ -309,6 +313,6 @@
            document.getElementById("modal").style.top = "-550px";
        }
     </script>
-	
+-->	
 </body>
 </html>

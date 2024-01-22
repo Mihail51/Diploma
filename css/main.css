@@ -27,6 +27,18 @@ p {
 	font-weight: 400;
 	line-height: 150%;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 .container {
 	max-width: 1140px;
 	margin: 0 auto;
@@ -825,7 +837,7 @@ p {
 	position: absolute;
 	width: 100%;
 	max-width: 587px;   
-	top: 0;
+	top: -550px;
 	left: 50%;
 	transform: translateX(-50%);
 }
@@ -910,4 +922,16 @@ p {
 	margin-top: 0;
 	opacity: 0.2;
 	background: #2B3541;
+}
+#modal-nav {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#modal-nav:checked ~ #modal {
+	top: 0;
+}
+#modal-nav:checked ~ .bg .container .bg__wrapper .bg__content .bg__content__holder .holder__button {
+	z-index: 10;
+	opacity: 0.4;
 }
