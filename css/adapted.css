@@ -300,43 +300,55 @@
 		grid-template-columns: [start] 1fr [center] 1fr [end];
 		grid-template-rows: [top] 224px [midle-1] 224px [midle-2] 224px [bottom]
 	}
-	.schedule__grid__item {
+	.schedule__grid__item__content {
 		background-position: 24px calc(100% - 73px);
 		padding: 23px 22px 16px;
 	}
 	.schedule__grid__item_1 {
 		grid-column: start / center;
 		grid-row: top / midle-1;
+	}
+	.schedule__grid__item_1 .schedule__grid__item__content {
 		background-image: url(../images/body.svg);
 		background-size: 65px;
 	}
 	.schedule__grid__item_2 {
 		grid-column: start / center;
 		grid-row: midle-1 / midle-2;
+	}
+	.schedule__grid__item_2 .schedule__grid__item__content {
 		background-image: url(../images/bottle.svg);
 		background-size: 43px 85px;
 	}
 	.schedule__grid__item_3 {
 		grid-column: start / center;
 		grid-row: midle-2 / bottom;
+	}
+	.schedule__grid__item_3 .schedule__grid__item__content {
 		background-image: url(../images/dumbbell.svg);
 		background-size: 91px 50px;
 	}
 	.schedule__grid__item_4 {
 		grid-column: center / end;
 		grid-row: top / midle-1;
+	}
+	.schedule__grid__item_4 .schedule__grid__item__content {
 		background-image: url(../images/jump.svg);
 		background-size: 67px 106px;
 	}
 	.schedule__grid__item_5 {
 		grid-column: center / end;
 		grid-row: midle-1 / midle-2;
+	}
+	.schedule__grid__item_5 .schedule__grid__item__content {
 		background-image: url(../images/heart.svg);
 		background-size: 65px 61px;
 	}
 	.schedule__grid__item_6 {
 		grid-column: center / end;
 		grid-row: midle-2 / bottom;
+	}
+	.schedule__grid__item_6 .schedule__grid__item__content {
 		background-image: url(../images/weight.svg);
 		background-size: 58px 66px;
 	}
@@ -535,34 +547,48 @@
 		grid-template-rows: [top] 114px [midle-1] 114px [midle-2] 114px [midle-3] 114px [midle-4] 107px [midle-5] 112px [bottom];
 	}
 	.schedule__grid__item {
-		background-position: 20px calc(100% - 22px);
 		grid-column: auto;
+	}
+	.schedule__grid__item .schedule__grid__item__content {
+		background-position: 20px calc(100% - 22px);
 	}
 	.schedule__grid__item__name {
 		margin-left: 75px;
 	}
-		.schedule__grid__item_1 {
+	.schedule__grid__item_1 {
 		grid-row: top / midle-1;
+	}
+	.schedule__grid__item_1 .schedule__grid__item__content {
 		background-size: 39px;
 	}
 	.schedule__grid__item_2 {
 		grid-row: midle-2 / midle-3;
+	}
+	.schedule__grid__item_2 .schedule__grid__item__content {
 		background-size: 23px 45px;
 	}
 	.schedule__grid__item_3 {
 		grid-row: midle-4 / midle-5;
+	}
+	.schedule__grid__item_3 .schedule__grid__item__content {
 		background-size: 46px 25px;
 	}
 	.schedule__grid__item_4 {
 		grid-row: midle-1 / midle-2;
+	}
+	.schedule__grid__item_4 .schedule__grid__item__content {
 		background-size: 34px 53px;
 	}
 	.schedule__grid__item_5 {
 		grid-row: midle-3 / midle-4;
+	}
+	.schedule__grid__item_5 .schedule__grid__item__content {
 		background-size: 39px 37px;
 	}
 	.schedule__grid__item_6 {
 		grid-row: midle-5 / bottom;
+	}
+	.schedule__grid__item_6 .schedule__grid__item__content {
 		background-size: 35px 40px;
 	}
 	.feedback__heading {
@@ -597,7 +623,7 @@
 	}
 	.bg__gradient {
 		height: 216px;
-		margin-bottom: -31px;
+		margin-bottom: -44px;
 	}
 	.bg__content__holder {
 		width: 100%;
@@ -633,11 +659,11 @@
 	.schedule__header {
 		margin-bottom: 24px;
 	}
-	.schedule__grid__item {
+	.schedule__grid__item .schedule__grid__item__content {
 		padding: 20px 22px 30px;
 		background-position: 20px calc(100% - 20px);
 	}
-	.schedule__grid__item:hover {
+	.schedule__grid__item .schedule__grid__item__content:hover {
 	  border-color: #000;
 	}
 	.schedule__grid__item:hover .schedule__gradient {
