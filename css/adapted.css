@@ -146,11 +146,11 @@
 	 	width: 73px;
 	 	gap: 16px;
 	 }
-	 .header__sociai {
+	 .header__sociai a {
 	 	width: 26px;
 	 	height: 26px;
 	 }
-	 .header__sociai:hover {
+	 .header__sociai a:hover {
 		  width: 26px;
 		  height: 26px;
 		  margin: 0;

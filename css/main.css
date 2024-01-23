@@ -139,7 +139,7 @@ p {
 	align-items: center;
 	gap: 30px;
 }
-.header__sociai {
+.header__sociai a {
 	display: block;
 	width: 30px;
 	height: 30px;
@@ -149,13 +149,13 @@ p {
 	transition: 0.3s;
 
 }
-.header__sociai_in {
+.header__sociai_in a {
 	background-image: url(../images/in.svg);
 }
-.header__sociai_fb {
+.header__sociai_fb a {
 	background-image: url(../images/fb.svg);
 }
-.header__sociai:hover {
+.header__sociai a:hover {
 	width: 38px;
 	height: 38px;
 	margin: 0 -4px;
@@ -237,6 +237,7 @@ p {
 	position: absolute;
 	right: -15%;
 	bottom: 0;
+	line-height: 0;
 }
 .bg__btn_down {
 	width: 52px;
@@ -402,40 +403,57 @@ p {
 .schedule__grid__item_1 {
 	grid-column: start / line-1;
 	grid-row: top / midle-1;
+}
+.schedule__grid__item_1 .schedule__grid__item__content {
 	background-image: url(../images/body.svg);
 	background-size: 65px;
 }
 .schedule__grid__item_2 {
 	grid-column: line-1 / line-2;
 	grid-row: top / midle-2;
+}
+.schedule__grid__item_2 .schedule__grid__item__content {
 	background-image: url(../images/bottle.svg);
 	background-size: 43px 85px;
 }
 .schedule__grid__item_3 {
 	grid-column: line-2 / end;
 	grid-row: top / midle-1;
+}
+.schedule__grid__item_3 .schedule__grid__item__content {
 	background-image: url(../images/dumbbell.svg);
 	background-size: 91px 50px;
 }
 .schedule__grid__item_4 {
 	grid-column: start / line-1;
 	grid-row: midle-1 / bottom;
+}
+.schedule__grid__item_4 .schedule__grid__item__content {
 	background-image: url(../images/jump.svg);
 	background-size: 67px 106px;
 }
 .schedule__grid__item_5 {
 	grid-column: line-1 /line-2;
 	grid-row: midle-2 / bottom;
+}
+.schedule__grid__item_5 .schedule__grid__item__content {
 	background-image: url(../images/heart.svg);
 	background-size: 65px 61px;
 }
 .schedule__grid__item_6 {
 	grid-column: line-2 / end;
 	grid-row: midle-1 / bottom;
+}
+.schedule__grid__item_6 .schedule__grid__item__content {
 	background-image: url(../images/weight.svg);
 	background-size: 58px 66px;
-} 
+}
 .schedule__grid__item {
+	position: relative;
+} 
+.schedule__grid__item__content {
+	width: 100%;
+	height: 100%;
 	position: relative;
 	padding: 20px 30px;
 	border: 1px solid #000;
@@ -461,7 +479,7 @@ p {
 .schedule__grid__item:hover .schedule__gradient {
 	opacity: 0.7;
 }
-.schedule__grid__item:hover {
+.schedule__grid__item:hover .schedule__grid__item__content {
 	border-color: transparent;
 } 
 .schedule__grid__item__date {
@@ -538,7 +556,7 @@ p {
 	font-weight: 400;
 	line-height: 150%;
 }
-.feedback__contact-form #email[placeholder="Ваш e-mail"] {
+.feedback__contact-form #email::placeholder {
 	opacity: 0.3;
 }
 .feedback__contact-form #email:focus {
@@ -667,8 +685,9 @@ p {
 	width: 225px;
 	height: 65px;
 	margin-top: 34px;
-	background: var(--yellow, #FBF138);
+	background: rgba(251, 241, 56, 1);
 	box-shadow: 0px 13px 24px 0px rgba(251, 241, 56, 0.30);
+	color: rgba(35, 38, 42, 1);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -682,9 +701,9 @@ p {
 	transition:  0.5s;
 }
 .about__btn:hover {
-	background: #23262A;
+	background: rgba(35, 38, 42, 1);
 	box-shadow: 0px 13px 24px 0px rgba(43, 53, 65, 0.20);
-	color: #fbf138;
+	color: rgba(251, 241, 56, 1);
 }
 .about__image {
 	flex-basis: 581px;
@@ -863,7 +882,7 @@ p {
 	margin: 0;
 	gap: 20px;
 }
-.modal__social {
+.modal__social a {
 	width: 26px;
 	height: 26px;
 }
@@ -872,19 +891,7 @@ p {
 	height: 135px;
 	background-color: #2b3541;
 	opacity: 0.4;
-/*	display: flex;
-	justify-content: center;
-	align-items: center;  */
 }
-/*
-.modal__holder__button {
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	display: none;
-}
-*/
 .modal__burger-close {
 	position: absolute;
 	top: 33px;
@@ -908,21 +915,23 @@ p {
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: start;
-	gap: 9px;
+	gap: 20px;
 }
 .modal__menu__item {
+	display: block;
+	width: 100%;
 	margin-top: 0;
+	padding-bottom: 8px;
+	border-bottom: 1px solid rgba(43, 53, 65, 0.2);
+}
+.modal__menu__item:last-child {
+	border: none;
 }
 .modal__menu__item a {
+	display: inline-block;
+	width: auto;
 	font-size: 16px;
-}
-.modal__line {
-	width: 100%;
-	height: 1px;
-	margin-top: 0;
-	opacity: 0.2;
-	background: #2B3541;
-}
+}  
 #modal-nav {
 	position: absolute;
 	top: 0;
