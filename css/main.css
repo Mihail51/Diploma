@@ -301,12 +301,12 @@ p {
 	height: 100%;
 	top: 0;
 	left: 0;
-	opacity: 0;
+	opacity: 0.3;
 	background: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0.00) 100%);
 	transition: 0.5s;
 }
 .events__gradient:hover {
-	opacity: 0.3;
+	opacity: 0.6;
 }
 .events__inform {
 	display: block;

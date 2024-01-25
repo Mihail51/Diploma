@@ -5,7 +5,11 @@
 }
 @media (max-width: 1390px) {
 	.girl {
-		right: -1%;
+		right: -2.5%;
+	}
+	.bg__title {
+		margin-top: 10px;
+		margin-bottom: 31px;
 	}
 }
 @media (max-width: 1200px) {
@@ -42,6 +46,11 @@
 	.footer__social {
 		flex-basis: 270px;
 		margin-left: auto;
+	}
+}
+@media (max-width: 1020px) {
+	.girl {
+		right: -1%;
 	}
 }
 @media (max-width: 1000px) {
@@ -121,6 +130,9 @@
 @media (max-width: 768px) {
 	.container {
 		padding: 0 10px;
+	}
+	.header__top {
+		margin-top: 31px;
 	}
 	.header__menu:not(.modal__menu) {
 		display: none;
@@ -511,6 +523,14 @@
 @media (max-width: 650px) {
 	.bg__gradient {
 		flex-basis:  36%;
+	}
+}
+@media (max-width: 575px) {
+	.bg__subtitle {
+		margin-top: 40px;
+	}
+	.holder__button {
+		padding: 20px 25px;
 	}
 }
 @media (max-width: 568px) {
